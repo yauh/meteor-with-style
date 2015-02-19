@@ -1,0 +1,1 @@
+LinksCollection = new Mongo.Collection('links');

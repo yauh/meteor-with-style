@@ -1,0 +1,5 @@
+//.jscsrc
+{
+  "excludeFiles": [".meteor/**"]
+}
+
