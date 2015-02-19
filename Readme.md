@@ -1,6 +1,6 @@
 # Meteor code in style
 
-A simple Meteor application that uses [JSHint](http://jshint.com/), [JSCS](http://jscs.info/), and eslint for linting.
+A simple Meteor application that shows how to use [JSHint](http://jshint.com/), [JSCS](http://jscs.info/), and [ESLint](http://eslint.org/) for linting.
 
 ## Usage
 
@@ -16,7 +16,7 @@ JSHint is a tool that helps to detect errors and potential problems in JavaScrip
 
 Issue the following command inside a terminal:
 
-`npm install -g jshint`
+`$ npm install -g jshint`
 
 ### Configuration
 
@@ -38,7 +38,7 @@ JSCS is a code style linter for programmatically enforcing a style guide.
 
 Issue the following command inside a terminal:
 
-`npm install -g jscs`
+`$ npm install -g jscs`
 
 ### Configuration
 
@@ -52,13 +52,13 @@ Inside the root directory of your project issue
 
 `$ jscs . `
 
-## eslint
+## [ESLint](http://eslint.org/)
 
 ### Installation
 
 Issue the following command inside a terminal:
 
-`npm install -g eslint`
+`$ npm install -g eslint`
 
 ### Configuration
 
