@@ -39,6 +39,6 @@ Meteor.methods({
       throw new Meteor.Error('You cannot delete this link because you did not add it');
     }
     data.userId = this.userId;
-    LinksCollection.remove({_id: data.linkId})
+    LinksCollection.remove({_id: data.linkId});
   }
 });
