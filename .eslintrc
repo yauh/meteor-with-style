@@ -34,11 +34,11 @@
     "jquery": false,      // jquery global variables.
     "prototypejs": false, // prototypejs global variables.
     "shelljs": false,     // shelljs global variables.
-    "meteor": false       // Meteor global variables
+    "meteor": true        // Meteor global variables
   },
 
   "globals": {
-    "meteor": false
+    "meteor": true
   },
 
   "plugins": [
