@@ -9,7 +9,7 @@
   //"disallowDanglingUnderscores": true,              // Disallows identifiers that start or end in _. Some popular identifiers are automatically listed as exceptions
   //"disallowEmptyBlocks": true,                      // Disallows empty blocks (except for catch blocks).
   //"disallowFunctionDeclarations": true,             // Disallows function declarations.
-  //"disallowImplicitTypeConversion": ["numeric", "boolean", "binary", "string"],           // Disallows implicit type conversion.
+  //"disallowImplicitTypeConversion": ["numeric", "boolean", "binary", "string"], // Disallows implicit type conversion.
   //"disallowKeywordsInComments": true,               // Disallows keywords in your comments, such as TODO or FIXME
   //"disallowKeywordsOnNewLine": ["else"],            // Disallows placing keywords on a new line.
   //"disallowKeywords": ["with"],                     // Disallows usage of specified keywords.
@@ -33,12 +33,12 @@
   //"disallowSpaceBeforeBlockStatements": true,       // Disallows space before block statements (for loops, control structures).
   //"disallowSpaceBeforeKeywords": true,              // Disallows space before keyword.
   //"disallowSpaceBeforeObjectValues": true,          // Disallows space after object keys.
-  //"disallowSpaceBeforePostfixUnaryOperators": true,      // Requires sticking unary operators to the left.
+  //"disallowSpaceBeforePostfixUnaryOperators": true, // Requires sticking unary operators to the left.
   //"disallowSpaceBetweenArguments": true,            // Ensure there are no spaces after argument separators in call expressions.
   //"disallowSpacesInAnonymousFunctionExpression": {  // Disallows space before () or {} in anonymous function expressions.
   //                                                 "beforeOpeningRoundBrace": true,
   //                                                 "beforeOpeningCurlyBrace": true
-  //                                               },
+  //},
   //"disallowSpacesInCallExpression": true,           // Disallows space before () in call expressions.
   //"disallowSpacesInConditionalExpression": true,    // Disallows space before and/or after ? or : in conditional expressions.
   //"disallowSpacesInForStatement": true,             // Disallow spaces in between for statement.
@@ -54,7 +54,7 @@
   //                               "beforeOpeningRoundBrace": true,
   //                               "beforeOpeningCurlyBrace": true
   //                            },
-  //"disallowSpacesInNamedFunctionExpression": {     // Disallows space before () or {} in named function expressions.
+  //"disallowSpacesInNamedFunctionExpression": {      // Disallows space before () or {} in named function expressions.
   //                                              "beforeOpeningRoundBrace": true,
   //                                              "beforeOpeningCurlyBrace": true
   //                                           },
@@ -90,37 +90,38 @@
   "requireSpaceAfterBinaryOperators": true,           // Disallows sticking binary operators to the right.
   //"requireSpaceAfterKeywords": true,                // Requires space after keyword.
   //"requireSpaceAfterLineComment": true,             // Requires that a line comment (//) be followed by a space.
-  "requireSpaceAfterObjectKeys": true,                // Requires space after object keys.
+  //"requireSpaceAfterObjectKeys": true,              // Requires space after object keys.
   "requireSpaceAfterPrefixUnaryOperators": true,      // Disallows sticking unary operators to the right.
   "requireSpaceBeforeBinaryOperators": true,          // Disallows sticking binary operators to the left.
   //"requireSpaceBeforeBlockStatements": true,        // Requires space before block statements (for loops, control structures).
   "requireSpaceBeforeKeywords": true,                 // Requires space before keyword.
-  "requireSpaceBeforeObjectValues": true,             // Requires space after object keys.
+  "requireSpaceBeforeObjectValues": true,
+  // Requires space after object keys.
   "requireSpaceBeforePostfixUnaryOperators": true,    // Disallows sticking unary operators to the left.
-  "requireSpaceBetweenArguments": true,               // Ensure there are spaces after argument separators in call expressions.
+  "requireSpaceBetweenArguments": true,  // Ensure there are spaces after argument separators in call expressions.
   "requireSpacesInAnonymousFunctionExpression": {     // Requires space before () or {} in anonymous function expressions.
-                                                   "beforeOpeningRoundBrace": true,
-                                                   "beforeOpeningCurlyBrace": true
-                                                },
+    "beforeOpeningRoundBrace": true,
+    "beforeOpeningCurlyBrace": true
+  },
   //"requireSpacesInCallExpression": true,            // Requires space before () in call expressions.
   //"requireSpacesInConditionalExpression": true,     // Requires space before and/or after ? or : in conditional expressions.
   //"requireSpacesInForStatement": true,              // Requires spaces inbetween for statement.
   "requireSpacesInFunctionDeclaration": {             // Requires space before () or {} in function declarations.
-                                           "beforeOpeningRoundBrace": true,
-                                           "beforeOpeningCurlyBrace": true
-                                        },
+    "beforeOpeningRoundBrace": true,
+    "beforeOpeningCurlyBrace": true
+  },
   "requireSpacesInFunctionExpression": {              // Requires space before () or {} in function expressions (both named and anonymous).
-                                          "beforeOpeningRoundBrace": true,
-                                          "beforeOpeningCurlyBrace": true
-                                       },
+    "beforeOpeningRoundBrace": true,
+    "beforeOpeningCurlyBrace": true
+  },
   "requireSpacesInFunction": {                        // Requires space before () or {} in function expressions (both named and anonymous).
-                                "beforeOpeningRoundBrace": true,
-                                "beforeOpeningCurlyBrace": true
-                             },
+    "beforeOpeningRoundBrace": true,
+    "beforeOpeningCurlyBrace": true
+  },
   "requireSpacesInNamedFunctionExpression": {         // Requires space before () or {} in named function expressions.
-                                               "beforeOpeningRoundBrace": true,
-                                               "beforeOpeningCurlyBrace": true
-                                            },
+    "beforeOpeningRoundBrace": true,
+    "beforeOpeningCurlyBrace": true
+  },
   //"requireSpacesInsideArrayBrackets": "all",        // Requires space after opening array square bracket and before closing.
   //"requireSpacesInsideBrackets": true,              // Requires space after opening square bracket and before closing.
   "requireSpacesInsideObjectBrackets": "all",         // Requires space after opening object curly brace and before closing.

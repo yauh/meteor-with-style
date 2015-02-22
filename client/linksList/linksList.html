@@ -1,43 +1,43 @@
 <template name="linkList">
-  <div class="link-list">
+    <div class="link-list">
 
-    <h1>Send us your best links</h1>
-    <table class="table table-striped table-hover ">
-      <thead>
-      <tr>
-        <th>Votes</th>
-        <th>Link</th>
-        <th>Category</th>
-        <th>Submitted by</th>
-          {{#if currentUser}}
-            <th>Action</th>
-          {{/if}}
-      </tr>
-      </thead>
-      <tbody>
-      {{#each links}}
-          {{> link }}
-      {{/each}}
-      </tbody>
-    </table>
-    <button id="show-more" class="btn btn-default btn-lg btn-block">Show more...</button>
-  </div>
+        <h1>Send us your best links</h1>
+        <table class="table table-striped table-hover ">
+            <thead>
+            <tr>
+                <th>Votes</th>
+                <th>Link</th>
+                <th>Category</th>
+                <th>Submitted by</th>
+                {{#if currentUser}}
+                    <th>Action</th>
+                {{/if}}
+            </tr>
+            </thead>
+            <tbody>
+            {{#each links}}
+                {{> link }}
+            {{/each}}
+            </tbody>
+        </table>
+        <button id="show-more" class="btn btn-default btn-lg btn-block">Show more...</button>
+    </div>
 
 </template>
 
 <template name="link">
-  <tr>
-    <td>{{votes}}</td>
-    <td><a href="{{url}}">{{text}}</a></td>
-    <td>{{category}}</td>
-    <td>{{creator}}</td>
-      {{#if currentUser}}
-        <td>
-          <button class="btn btn-success {{hasMyVote}}">Vote</button>
-            {{#if isMyLink}}
-              <button class="btn btn-danger">Delete</button>
-            {{/if}}
-        </td>
-      {{/if}}
-  </tr>
+    <tr>
+        <td>{{votes}}</td>
+        <td><a href="{{url}}">{{text}}</a></td>
+        <td>{{category}}</td>
+        <td>{{creator}}</td>
+        {{#if currentUser}}
+            <td>
+                <button class="btn btn-success {{hasMyVote}}">Vote</button>
+                {{#if isMyLink}}
+                    <button class="btn btn-danger">Delete</button>
+                {{/if}}
+            </td>
+        {{/if}}
+    </tr>
 </template>

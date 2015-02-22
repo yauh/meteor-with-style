@@ -1,46 +1,46 @@
 <template name="addLink">
-  <div class="add-link">
-    <form class="form-horizontal">
-      <fieldset>
-        <legend>Add a new link</legend>
-        <div class="form-group">
-          <label for="link-url" class="col-lg-2 control-label">Link URL</label>
+    <div class="add-link">
+        <form class="form-horizontal">
+            <fieldset>
+                <legend>Add a new link</legend>
+                <div class="form-group">
+                    <label for="link-url" class="col-lg-2 control-label">Link URL</label>
 
-          <div class="col-lg-10">
-            <input type="text" class="form-control" id="link-url" placeholder="www.yauh.de">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="link-text" class="col-lg-2 control-label">Link text</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="link-url" placeholder="www.yauh.de">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="link-text" class="col-lg-2 control-label">Link text</label>
 
-          <div class="col-lg-10">
-            <input type="text" class="form-control" id="link-text" placeholder="Stephan Hochhaus' blog">
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="link-text" placeholder="Stephan Hochhaus' blog">
 
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="link-category" class="col-lg-2 control-label">Select category</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="link-category" class="col-lg-2 control-label">Select category</label>
 
-          <div class="col-lg-10">
-            <select class="form-control" id="link-category">
-                {{#each categories}}
-                    {{> categoryOption }}
-                {{/each}}
-            </select>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-lg-10 col-lg-offset-2">
-            <button type="reset" class="btn btn-default">Cancel</button>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </div>
-      </fieldset>
-    </form>
-  </div>
+                    <div class="col-lg-10">
+                        <select class="form-control" id="link-category">
+                            {{#each categories}}
+                                {{> categoryOption }}
+                            {{/each}}
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                        <button type="reset" class="btn btn-default">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </template>
 
 
 <template name="categoryOption">
-  <option>{{name}}</option>
+    <option>{{name}}</option>
 </template>
