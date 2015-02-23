@@ -1,25 +1,25 @@
 // Configuration
 Router.configure ( {
-  layoutTemplate: "mainLayout"
+  layoutTemplate: 'mainLayout'
 } );
 
 // Routes
-Router.route ( "/", function () {
+Router.route ( '/', function () {
 
-  this.render ( "linkList" );
-}, { name: "home" } );
+  this.render ( 'linkList' );
+}, { name: 'home' } );
 
-Router.route ( "/new", {
-  name: "new",
+Router.route ( '/new', {
+  name: 'new',
   subscriptions: function () {
-    return Meteor.subscribe ( "categories" );
+    return Meteor.subscribe ( 'categories' );
   },
   onBeforeAction: function () {
     if (!Meteor.userId ()) {
       // if the user is not logged in, render the Login template
-      this.render ( "loginRequest" );
+      this.render ( 'loginRequest' );
     } else {
-      // otherwise don"t hold up the rest of hooks or our route/action function
+      // otherwise don't hold up the rest of hooks or our route/action function
       // from running
       this.next ();
     }
@@ -27,9 +27,9 @@ Router.route ( "/new", {
 
   action: function () {
     if (this.ready ()) {
-      this.render ( "addLink" );
+      this.render ( 'addLink' );
     } else {
-      this.render ( "Loading categories" );
+      this.render ( 'Loading categories' );
     }
   },
   data: function () {

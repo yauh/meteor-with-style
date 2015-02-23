@@ -1,4 +1,4 @@
-Meteor.publish( "links", function (options) {
+Meteor.publish( 'links', function (options) {
   console.log( options );
   check( options,
     {
@@ -13,6 +13,6 @@ Meteor.publish( "links", function (options) {
 } );
 
 
-Meteor.publish( "categories", function () {
+Meteor.publish( 'categories', function () {
   return CategoriesCollection.find( {}, { sort: { name: 1 } } );
 } );
