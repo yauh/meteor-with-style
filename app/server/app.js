@@ -1,18 +1,22 @@
-Meteor.publish( 'links', function (options) {
-  console.log( options );
-  check( options,
-    {
-      linksLimit: Number
-    } );
+Meteor.publish('links', function (options) {
+  console.log(options);
+  check(options, {
+    linksLimit: Number
+  });
   var qryOptions = {
     limit: options.linksLimit,
-    sort: { votes: -1 }
+    sort: {
+      votes: -1
+    }
   };
-  console.log( qryOptions );
-  return LinksCollection.find( {}, qryOptions );
-} );
+  console.log(qryOptions);
+  return LinksCollection.find({}, qryOptions);
+});
 
-
-Meteor.publish( 'categories', function () {
-  return CategoriesCollection.find( {}, { sort: { name: 1 } } );
-} );
+Meteor.publish('categories', function () {
+  return CategoriesCollection.find({}, {
+    sort: {
+      name: 1
+    }
+  });
+});

@@ -28,7 +28,7 @@
   //"disallowSpaceAfterKeywords": true,               // Disallows space after keyword.
   //"disallowSpaceAfterLineComment": true,            // Requires that a line comment (//) not be followed by a space.
   //"disallowSpaceAfterObjectKeys": true,             // Disallows space after object keys.
-  //"disallowSpaceAfterPrefixUnaryOperators": true,   // Requires sticking unary operators to the right.
+  "disallowSpaceAfterPrefixUnaryOperators": true,   // Requires sticking unary operators to the right.
   //"disallowSpaceBeforeBinaryOperators": true,       // Requires sticking binary operators to the left.
   //"disallowSpaceBeforeBlockStatements": true,       // Disallows space before block statements (for loops, control structures).
   //"disallowSpaceBeforeKeywords": true,              // Disallows space before keyword.
@@ -91,7 +91,7 @@
   //"requireSpaceAfterKeywords": true,                // Requires space after keyword.
   //"requireSpaceAfterLineComment": true,             // Requires that a line comment (//) be followed by a space.
   //"requireSpaceAfterObjectKeys": true,              // Requires space after object keys.
-  "requireSpaceAfterPrefixUnaryOperators": true,      // Disallows sticking unary operators to the right.
+  //"requireSpaceAfterPrefixUnaryOperators": true,      // Disallows sticking unary operators to the right.
   "requireSpaceBeforeBinaryOperators": true,          // Disallows sticking binary operators to the left.
   //"requireSpaceBeforeBlockStatements": true,        // Requires space before block statements (for loops, control structures).
   "requireSpaceBeforeKeywords": true,                 // Requires space before keyword.
@@ -134,4 +134,3 @@
   //"validateParameterSeparator": ", ",               // Enable validation of separators between function parameters. Will ignore newlines.
   //"validateQuoteMarks": true                        // Requires all quote marks to be either the supplied value, or consistent if true
 }
-
