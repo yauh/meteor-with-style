@@ -6,6 +6,8 @@ This repository contains a simple Meteor application that shows how to
 * perform linting on Meteor (JavaScript) code
 * utilize js-beautify to format code according to style requirements
 
+You can find the associated slides [on slideshare](http://de.slideshare.net/stephanhochhaus/writing-meteor-code-with-style). Also this repository contains a sample Meteor application so you can get started with some style experiments on your own.
+
 ## Why worry about style?
 
 Two reasons why you should decide on a style and enforce it:
