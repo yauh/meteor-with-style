@@ -376,7 +376,7 @@
       "propertyName": false
     }],
     // require or disallow spaces inside brackets (off by default)
-    "space-in-parens": [1, "never"],
+    "space-in-parens": [0, "never"],
     // require or disallow spaces inside parentheses (off by default)
     "space-infix-ops": 0,
     // require spaces around operators
