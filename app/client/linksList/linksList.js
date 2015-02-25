@@ -30,7 +30,7 @@ Template.link.events({
       }
     });
   },
-  'click button.btn-success': function (evt) {
+  'click button.btn-success': function(evt) {
     // upvote link
     evt.preventDefault();
     Meteor.call('AddVote', {
