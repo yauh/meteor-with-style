@@ -4,4 +4,4 @@ Most editor allow you to define certain style aspects, such as how many spaces t
 
 The [list of supported options](https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties) is different between editors.
 
-Note that only a small fraction of what can be part of a style guide can be addressed using editor settings or even editorconfig. Try to include tools to [beautify code adhering to style conventions](Beautification.md).
+Note that only a small fraction of what can be part of a style guide can be addressed using editor settings or even editorconfig. Try to include tools to [beautify code adhering to style conventions](Beautify.md).

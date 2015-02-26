@@ -6,7 +6,7 @@ This repository contains a simple Meteor application that shows how to
 * perform linting on Meteor (JavaScript) code
 * utilize js-beautify to format code according to style requirements
 
-You can find the associated slides [on slideshare](http://de.slideshare.net/stephanhochhaus/writing-meteor-code-with-style). Also this repository contains a sample Meteor application so you can get started with some style experiments on your own.
+You can find the associated slides [on slideshare](http://de.slideshare.net/stephanhochhaus/writing-meteor-code-with-style) and [an associated post on my blog](https://www.yauh.de/writing-clean-javascript-code-with-eslint-and-js-beautify/). Also this repository contains a sample Meteor application so you can get started with some style experiments on your own.
 
 ## Why worry about style?
 
@@ -27,4 +27,4 @@ For Meteor projects it is a good idea to look at [the offical MDG Style Guide](h
 
 Before there were computers there were code reviews to identify violations of style guidelines. Static code analysis tools will produce reports of all found violations.
 
-Enforcing a certain style becomes easier when using a [supporting editor configuration](Editing.md) as well as tools that are capable of [pointing out violations of style rules](Linting.md). Ideally the editor is capable of [beautifiying the code adhering to style conventions](Beautification.md).
+Enforcing a certain style becomes easier when using a [supporting editor configuration](Editing.md) as well as tools that are capable of [pointing out violations of style rules](Linting.md). Ideally the editor is capable of [beautifiying the code adhering to style conventions](Beautify.md).
