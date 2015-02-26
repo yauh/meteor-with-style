@@ -1,5 +1,5 @@
 Template.linkList.helpers({
-  links: function() {
+  links: function () {
     return LinksCollection.find({}, {
       sort: {
         votes: -1
@@ -9,19 +9,19 @@ Template.linkList.helpers({
 });
 
 Template.linkList.events({
-  'click button#show-more': function() {
+  'click button#show-more': function () {
     var newLimit = Session.get('linksLimit') + 10;
     Session.set('linksLimit', newLimit);
   }
 });
 
 Template.link.events({
-  'click button.btn-danger': function(evt) {
+  'click button.btn-danger': function (evt) {
     // delete link
     evt.preventDefault();
     Meteor.call('RemoveLink', {
       linkId: this._id
-    }, function(error) {
+    }, function (error) {
 
       if (error) {
         return alert('Error: ' + error.error);
@@ -30,12 +30,12 @@ Template.link.events({
       }
     });
   },
-  'click button.btn-success': function(evt) {
+  'click button.btn-success': function (evt) {
     // upvote link
     evt.preventDefault();
     Meteor.call('AddVote', {
       linkId: this._id
-    }, function(error) {
+    }, function (error) {
 
       if (error) {
         return alert('Error: ' + error.error);

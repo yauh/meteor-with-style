@@ -1,8 +1,8 @@
 Meteor.startup(function () {
-if (CategoriesCollection.find().count() === 0) {
-  var categories = [{
-  name: 'Blogs'
-}, {
+  if (CategoriesCollection.find().count() === 0) {
+    var categories = [{
+      name: 'Blogs'
+    }, {
       name: 'News'
     }, {
       name: 'Projects'
