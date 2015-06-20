@@ -362,7 +362,7 @@
     // require a space after certain keywords (off by default)
     "space-before-blocks": 0,
     // require or disallow space before blocks (off by default)
-    "space-before-function-parentheses": {
+    "space-before-function-paren": {
       "anonymous": "always",
       "named": "always"
     },
